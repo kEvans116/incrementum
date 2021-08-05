@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    background: #292828;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top:0;
+    z-index: 999;
+}
+
+.navbar_wrapper{
+    display:flex;
+    justify-content: center;   
+    height:100px;
+    z-index:1;
+    width:100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.fa-angle-double-right{
+    font-size: 3rem;
+    color:orangered;
+}
+
+#navbar_logo{
+   text-decoration: none;
+   background-color: orangered;
+   background-image: linear-gradient(to top, darkblue 0%, orange 100%);
+   background-size: 100%;
+   -webkit-background-clip: text;
+   background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+   display:flex;
+   align-items:center;
+   cursor: pointer; 
+   font-size: 2.5rem;
+   padding:0.6rem;
+}
+
+.navbar_menu{
+    display: flex; 
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_item{
+    height:80px;
+}
+
+.navbar_links{
+    color:darkblue;
+    background-color: orangered;
+    background-image: linear-gradient(to top, darkblue 0%, orange 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height:100%;
+}
+
+.navbar_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+  
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background: #292828;
+    background-image: linear-gradient(to top, darkorange 0%, #292828 100%);
+    background-size: 100%;
+    color: #292828;
+}
+  
+.button:hover {
+    background: darkorange;
+    /*transition: all 0.5s ease;*/
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
